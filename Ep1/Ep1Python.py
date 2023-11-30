@@ -1,10 +1,10 @@
 import os  # Importa o módulo 'os' para funcionalidades do sistema operacional
 
 def child_process():  # Função para o processo filho
-    print("Hello from child process")  # Imprime uma mensagem do processo filho
+    print("Hello World (from child process)")  # Imprime uma mensagem do processo filho
 
 def parent_process():  # Função para o processo pai
-    print("Hello from parent process")  # Imprime uma mensagem do processo pai
+    print("Hello World (from parent process)")  # Imprime uma mensagem do processo pai
     pid = os.fork()  # Cria um novo processo duplicando o processo atual (pai)
 
     if pid == 0:  # Verifica se está no processo filho
